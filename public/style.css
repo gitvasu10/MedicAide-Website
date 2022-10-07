@@ -1,0 +1,221 @@
+*{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+}
+.header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(https://thumbs.dreamstime.com/b/doctor-hospital-background-copy-space-doctor-hospital-background-copy-space-healthcare-medical-concept-108682352.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+}
+nav{
+        display: flex;
+        padding: 1% 6%;
+        justify-content: space-between;
+        align-items: center;
+}
+nav img{
+        width: 150px;
+}
+.nav-links{
+        flex: 1;
+        text-align: right;
+}
+.nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+}
+.nav-links ul li a{
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+        font-size: 13px;
+
+}
+
+.nav-links ul li a:hover {
+        color: lightblue;
+        transform: 1s;
+}
+.nav-links ul li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: lightblue;
+        display: block;
+        margin: auto;
+}
+.nav-links ul li:hover::after{
+        width: 100%;
+}
+
+.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+.text-box{
+        width: 90%;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+}
+.text-box h1{
+        font-size: 62px;
+}
+.text-box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: white;
+}
+.hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 12px 34px;
+        font-size: 13px;
+        font-weight: bold;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        border-radius: 6%;
+}
+.hero-btn:hover{
+        border: 1px solid grey;
+        color: black;
+        background: lightblue;
+        transform: 1s;
+
+}
+
+footer {
+        clear: both;
+        position: relative;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+@media(max-width: 700px){
+        .text-box h1{
+                font-size: 20px;
+        }
+        .nav-links ul li{
+                display: block;
+        }
+        .nav-links{
+                position: absolute;
+                background: red;
+                height: 100vh;
+                width: 200vh;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+        }
+}
+
+/*-------ABOUT------*/
+
+.about{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+}
+
+p{ 
+        color: black;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+}
+
+.button{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid grey;
+        padding: 12px 34px;
+        font-size: 13px;
+        background-color: rgba(0,0,128,0.3);
+        position: relative;
+        cursor: pointer;
+        border-radius: 12%;
+        font-weight: bold;
+}
+.button:hover{
+        border: 1px solid gainsboro;
+        background: lightblue;
+        color: black;
+        transform: 1s;
+
+}
+.para {
+        font-style: italic;
+}
+.row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+}
+.course-col{
+        
+        flex-basis: 48%;
+        background: rgba(0,0,128,0.3);
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+}
+h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+
+}
+.course-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+        .row{
+                flex-direction: column;
+        }
+}
+.tool{
+        flex-basis: 31%;
+        background: rgba(0,0,128,0.3);
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
+        border-color: whitesmoke;
+}
+
+footer .head2 {
+        font-weight: bolder;
+        font-style: inherit;
+}
+
+footer .parap {
+        font-style: italic;
+}
+
+p .copyright {
+        line-height: 40px;
+        font-size: 0.7em;
+        text-align: center;
+        justify-items: baseline;
+        justify-content: center;
+}
