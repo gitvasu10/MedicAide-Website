@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="maps.css">
   </head>
   <body>
-    <main class="container">
-      <div id="map" class="map"></div>
-    </main>
-
-    <script src="maps.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkBzHUcPlUwMvSzWWypv3gJHU6JMGU_58&callback=init"></script>
+    <div class="mapouter">
+      <h1>Find Walk - In Care 🏥</h1>
+      <div class="gmap_canvas">
+        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=DIT%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"allowfullscreen></iframe>
+        <a href="https://putlocker-is.org"></a><br>
+        <!-- <style>
+          .mapouter{position:absolute;text-align:right;height:600px;width:1000px;}
+        </style> -->
+        <!-- <a href="https://www.embedgooglemap.net"></a> -->
+        <style>
+          .gmap_canvas {overflow:hidden;background:none!important;height:600px;width:100%;}
+        </style>
+      </div>
+    </div>
   </body>
 </html>
+
