@@ -219,3 +219,21 @@ p .copyright {
         justify-items: baseline;
         justify-content: center;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+        .row {
+                width: 100%;
+        }
+        .header {
+                width: 100%;
+        }
+
+}
+
+@media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+}
