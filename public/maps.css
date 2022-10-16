@@ -4,6 +4,11 @@ html {
     height: 100%;
 }
 
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: left;
+    color: antiquewhite;
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -13,16 +18,42 @@ body {
     color: #1a1a1a;
     text-align: left;
     height: 100%;
-    background-color: #fff;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(https://thumbs.dreamstime.com/b/doctor-hospital-background-copy-space-doctor-hospital-background-copy-space-healthcare-medical-concept-108682352.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1em;
 }
 
-.container {
+.maprouter {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 100%;
+    position:absolute;
+    text-align:right;
+    /* height:600px; */
+    width:1000px;
 }
 
-.map {
-    flex: 1;
-    background: #f0f0f0;
+
+@media only screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .maprouter {
+        width: 100%;
+        flex: 1;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
 }
